@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		8D4B604E19C239DE00FC4E87 /* Copy_libRAC_to_BCOVPlayerSDK */ = {
+		8D4B604E19C239DE00FC4E87 /* Generate_BCOVRAC */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 8D4B605319C239DE00FC4E87 /* Build configuration list for PBXAggregateTarget "Copy_libRAC_to_BCOVPlayerSDK" */;
+			buildConfigurationList = 8D4B605319C239DE00FC4E87 /* Build configuration list for PBXAggregateTarget "Generate_BCOVRAC" */;
 			buildPhases = (
 				8D4B605419C239ED00FC4E87 /* ShellScript */,
 				8D4B605E19C363FE00FC4E87 /* ShellScript */,
@@ -17,7 +17,7 @@
 			dependencies = (
 				8D4B605619C3429800FC4E87 /* PBXTargetDependency */,
 			);
-			name = Copy_libRAC_to_BCOVPlayerSDK;
+			name = Generate_BCOVRAC;
 			productName = Copy_libRAC;
 		};
 /* End PBXAggregateTarget section */
@@ -1997,7 +1997,7 @@
 				1860F411177C91B500C7B3C9 /* ReactiveCocoa-iOS-UIKitTestHost */,
 				1860F42F177C91B500C7B3C9 /* ReactiveCocoa-iOS-UIKitTestHostTests */,
 				D05AD39317F2D56F0080895B /* ReactiveCocoa-Mac */,
-				8D4B604E19C239DE00FC4E87 /* Copy_libRAC_to_BCOVPlayerSDK */,
+				8D4B604E19C239DE00FC4E87 /* Generate_BCOVRAC */,
 			);
 		};
 /* End PBXProject section */
@@ -3221,7 +3221,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D4B605319C239DE00FC4E87 /* Build configuration list for PBXAggregateTarget "Copy_libRAC_to_BCOVPlayerSDK" */ = {
+		8D4B605319C239DE00FC4E87 /* Build configuration list for PBXAggregateTarget "Generate_BCOVRAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D4B604F19C239DE00FC4E87 /* Debug */,
