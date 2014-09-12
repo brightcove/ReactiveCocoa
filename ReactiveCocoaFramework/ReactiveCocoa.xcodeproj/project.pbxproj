@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8D4B604E19C239DE00FC4E87 /* Copy_libRAC_to_BCOVPlayerSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8D4B605319C239DE00FC4E87 /* Build configuration list for PBXAggregateTarget "Copy_libRAC_to_BCOVPlayerSDK" */;
+			buildPhases = (
+				8D4B605419C239ED00FC4E87 /* ShellScript */,
+			);
+			dependencies = (
+				8D4B605619C3429800FC4E87 /* PBXTargetDependency */,
+			);
+			name = Copy_libRAC_to_BCOVPlayerSDK;
+			productName = Copy_libRAC;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1646747B17FFA0610036E30B /* UICollectionReusableView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1668027817FE75E900C724B4 /* UICollectionReusableView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1668028017FE75F900C724B4 /* UICollectionReusableView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1668027917FE75E900C724B4 /* UICollectionReusableView+RACSignalSupport.m */; };
@@ -569,6 +584,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 88037F8215056328001A5B19;
 			remoteInfo = ReactiveCocoa;
+		};
+		8D4B605519C3429800FC4E87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88CDF7B215000FCE00163A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F440AA153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
 		};
 		D0ED9DB517501806003859A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1270,7 +1292,6 @@
 				88C5A02816924BFC0045EF05 /* RACMulticastConnectionSpec.m */,
 				D0EDE76516968AB10072A780 /* RACPropertySignalExamples.h */,
 				D0EDE76616968AB10072A780 /* RACPropertySignalExamples.m */,
-				8803C010166732BA00C36839 /* RACSchedulerSpec.m */,
 				D0C70F8F164337A2007027B4 /* RACSequenceAdditionsSpec.m */,
 				D0C70F91164337E3007027B4 /* RACSequenceExamples.h */,
 				D0C70F92164337E3007027B4 /* RACSequenceExamples.m */,
@@ -1850,7 +1871,7 @@
 			name = "ReactiveCocoa-iOS-UIKitTestHostTests";
 			productName = "ReactiveCocoa-iOS-UIKitTestHostTests";
 			productReference = 1860F430177C91B500C7B3C9 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		5FAF5222174D4C2000CAC810 /* ReactiveCocoaTests-iOS */ = {
 			isa = PBXNativeTarget;
@@ -1868,7 +1889,7 @@
 			name = "ReactiveCocoaTests-iOS";
 			productName = "ReactiveCocoaTests-iOS";
 			productReference = 5FAF5223174D4C2000CAC810 /* ReactiveCocoaTests-iOS.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		88037F8215056328001A5B19 /* ReactiveCocoa */ = {
 			isa = PBXNativeTarget;
@@ -1905,7 +1926,7 @@
 			name = ReactiveCocoaTests;
 			productName = GHObservableTests;
 			productReference = 88CDF7DC15000FCF00163A9F /* ReactiveCocoaTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		88F440AA153DAC820097B4C3 /* ReactiveCocoa-iOS */ = {
 			isa = PBXNativeTarget;
@@ -1950,6 +1971,11 @@
 				CLASSPREFIX = RAC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "GitHub, Inc.";
+				TargetAttributes = {
+					8D4B604E19C239DE00FC4E87 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
 			};
 			buildConfigurationList = 88CDF7B515000FCE00163A9F /* Build configuration list for PBXProject "ReactiveCocoa" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1970,6 +1996,7 @@
 				1860F411177C91B500C7B3C9 /* ReactiveCocoa-iOS-UIKitTestHost */,
 				1860F42F177C91B500C7B3C9 /* ReactiveCocoa-iOS-UIKitTestHostTests */,
 				D05AD39317F2D56F0080895B /* ReactiveCocoa-Mac */,
+				8D4B604E19C239DE00FC4E87 /* Copy_libRAC_to_BCOVPlayerSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -2019,6 +2046,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D4B605419C239ED00FC4E87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ${PROJECT_DIR}/../../../Tools/Copy_libRAC_to_BCOVPlayerSDK.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1860F40E177C91B500C7B3C9 /* Sources */ = {
@@ -2423,6 +2466,11 @@
 			isa = PBXTargetDependency;
 			target = 88037F8215056328001A5B19 /* ReactiveCocoa */;
 			targetProxy = 88037FDA150564E9001A5B19 /* PBXContainerItemProxy */;
+		};
+		8D4B605619C3429800FC4E87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88F440AA153DAC820097B4C3 /* ReactiveCocoa-iOS */;
+			targetProxy = 8D4B605519C3429800FC4E87 /* PBXContainerItemProxy */;
 		};
 		D0ED9DB617501806003859A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2941,6 +2989,34 @@
 			};
 			name = Release;
 		};
+		8D4B604F19C239DE00FC4E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8D4B605019C239DE00FC4E87 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		8D4B605119C239DE00FC4E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8D4B605219C239DE00FC4E87 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Profile;
+		};
 		D05AD3B117F2D5710080895B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D094E46517775B1000906BF7 /* Mac-StaticLibrary.xcconfig */;
@@ -3130,6 +3206,16 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8D4B605319C239DE00FC4E87 /* Build configuration list for PBXAggregateTarget "Copy_libRAC_to_BCOVPlayerSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D4B604F19C239DE00FC4E87 /* Debug */,
+				8D4B605019C239DE00FC4E87 /* Test */,
+				8D4B605119C239DE00FC4E87 /* Release */,
+				8D4B605219C239DE00FC4E87 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		D05AD3BD17F2D5710080895B /* Build configuration list for PBXNativeTarget "ReactiveCocoa-Mac" */ = {
 			isa = XCConfigurationList;
