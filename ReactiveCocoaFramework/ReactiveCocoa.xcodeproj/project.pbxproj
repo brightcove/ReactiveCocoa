@@ -12,6 +12,7 @@
 			buildConfigurationList = 8D4B605319C239DE00FC4E87 /* Build configuration list for PBXAggregateTarget "Copy_libRAC_to_BCOVPlayerSDK" */;
 			buildPhases = (
 				8D4B605419C239ED00FC4E87 /* ShellScript */,
+				8D4B605E19C363FE00FC4E87 /* ShellScript */,
 			);
 			dependencies = (
 				8D4B605619C3429800FC4E87 /* PBXTargetDependency */,
@@ -2061,6 +2062,19 @@
 			shellPath = /bin/sh;
 			shellScript = "source ${PROJECT_DIR}/../../../Tools/Copy_libRAC_to_BCOVPlayerSDK.sh";
 		};
+		8D4B605E19C363FE00FC4E87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ${PROJECT_DIR}/../../../Tools/Generate_BCOVRAC.sh";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -3216,6 +3230,7 @@
 				8D4B605219C239DE00FC4E87 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05AD3BD17F2D5710080895B /* Build configuration list for PBXNativeTarget "ReactiveCocoa-Mac" */ = {
 			isa = XCConfigurationList;
