@@ -1,0 +1,17 @@
+//
+//  BCOVRAC.pch
+//  ReactiveCocoa
+//
+//  Created by Mike Moscardini on 3/16/15.
+//  Copyright (c) 2015 GitHub. All rights reserved.
+//
+
+#ifndef ReactiveCocoa_BCOVRAC_pch
+#define ReactiveCocoa_BCOVRAC_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "BCOVRAC.h"
+
+#endif
