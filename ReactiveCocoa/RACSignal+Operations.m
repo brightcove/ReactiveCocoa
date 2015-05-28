@@ -634,20 +634,14 @@ static RACDisposable *subscribeForever (RACSignal *signal, void (^next)(id), voi
 
 	RACCompoundDisposable *disposable = [RACCompoundDisposable compoundDisposable];
 
-	// Purposely not retaining 'object', since we want to tear down the binding
-	// when it deallocates normally.
-	__block void * volatile objectPtr = (__bridge void *)object;
+    // BCOV: Patch for ReactiveCocoa issue #1607 [RACSignal -setKeyPath:onObject:nilValue:] should use __weak
+    NSObject * __weak weakObj = object;
 
 	RACDisposable *subscriptionDisposable = [self subscribeNext:^(id x) {
-		// Possibly spec, possibly compiler bug, but this __bridge cast does not
-		// result in a retain here, effectively an invisible __unsafe_unretained
-		// qualifier. Using objc_precise_lifetime gives the __strong reference
-		// desired. The explicit use of __strong is strictly defensive.
-		__strong NSObject *object __attribute__((objc_precise_lifetime)) = (__bridge __strong id)objectPtr;
+        NSObject *object = weakObj;
 		[object setValue:x ?: nilValue forKeyPath:keyPath];
 	} error:^(NSError *error) {
-		__strong NSObject *object __attribute__((objc_precise_lifetime)) = (__bridge __strong id)objectPtr;
-
+        NSObject *object = weakObj;
 		NSCAssert(NO, @"Received error from %@ in binding for key path \"%@\" on %@: %@", self, keyPath, object, error);
 
 		// Log the error if we're running with assertions disabled.
@@ -685,13 +679,6 @@ static RACDisposable *subscribeForever (RACSignal *signal, void (^next)(id), voi
 			[bindings removeObjectForKey:keyPath];
 		}
 		#endif
-
-		while (YES) {
-			void *ptr = objectPtr;
-			if (OSAtomicCompareAndSwapPtrBarrier(ptr, NULL, &objectPtr)) {
-				break;
-			}
-		}
 	}];
 
 	[disposable addDisposable:clearPointerDisposable];
