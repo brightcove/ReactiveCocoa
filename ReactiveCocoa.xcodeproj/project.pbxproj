@@ -731,6 +731,7 @@
 		987A00A21B14E754002D4331 /* MKAnnotationView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 314304161ACA8B1E00595017 /* MKAnnotationView+RACSignalSupport.m */; };
 		987A00A31B14E75C002D4331 /* MKAnnotationView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 314304151ACA8B1E00595017 /* MKAnnotationView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		987A00A41B14E75D002D4331 /* MKAnnotationView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 314304151ACA8B1E00595017 /* MKAnnotationView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2B9B391BB1DFFB00727038 /* UISwitch+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764DF19EDA41200A782A9 /* UISwitch+RACSignalSupport.m */; };
 		D01B7B6219EDD8FE00D26E01 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D05E662419EDD82000904ACA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01B7B6319EDD8FE00D26E01 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D037672B19EDA75D00A782A9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01B7B6419EDD94B00D26E01 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D047260C19E49F82006002AA /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -2850,6 +2851,7 @@
 				497FB74F1AB7637700B7315F /* RACSubscriptionScheduler.m in Sources */,
 				497FB7501AB7637700B7315F /* RACTargetQueueScheduler.m in Sources */,
 				497FB7511AB7637700B7315F /* RACTestScheduler.m in Sources */,
+				AA2B9B391BB1DFFB00727038 /* UISwitch+RACSignalSupport.m in Sources */,
 				497FB7521AB7637700B7315F /* RACTuple.m in Sources */,
 				497FB7531AB7637700B7315F /* RACTupleSequence.m in Sources */,
 				497FB7541AB7637700B7315F /* RACUnarySequence.m in Sources */,
