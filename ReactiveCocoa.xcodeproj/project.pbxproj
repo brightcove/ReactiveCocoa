@@ -763,6 +763,21 @@
 		896377391BE9244A003045B9 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764E519EDA41200A782A9 /* UITextField+RACSignalSupport.m */; };
 		8963773A1BE9244A003045B9 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D03764E619EDA41200A782A9 /* UITextView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8963773B1BE9244A003045B9 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764E719EDA41200A782A9 /* UITextView+RACSignalSupport.m */; };
+		899330531BEBC60700E844E6 /* UIActionSheet+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764C319EDA41200A782A9 /* UIActionSheet+RACSignalSupport.m */; };
+		899330541BEBC60700E844E6 /* UIAlertView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764C519EDA41200A782A9 /* UIAlertView+RACSignalSupport.m */; };
+		899330551BEBC60700E844E6 /* UIBarButtonItem+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764C719EDA41200A782A9 /* UIBarButtonItem+RACCommandSupport.m */; };
+		899330561BEBC60700E844E6 /* UICollectionReusableView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764CB19EDA41200A782A9 /* UICollectionReusableView+RACSignalSupport.m */; };
+		899330571BEBC60700E844E6 /* UIDatePicker+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764D119EDA41200A782A9 /* UIDatePicker+RACSignalSupport.m */; };
+		899330581BEBC60700E844E6 /* UIImagePickerController+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764D519EDA41200A782A9 /* UIImagePickerController+RACSignalSupport.m */; };
+		899330591BEBC60700E844E6 /* UIRefreshControl+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764D719EDA41200A782A9 /* UIRefreshControl+RACCommandSupport.m */; };
+		8993305A1BEBC60700E844E6 /* UISegmentedControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764D919EDA41200A782A9 /* UISegmentedControl+RACSignalSupport.m */; };
+		8993305B1BEBC60700E844E6 /* UISlider+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764DB19EDA41200A782A9 /* UISlider+RACSignalSupport.m */; };
+		8993305C1BEBC60700E844E6 /* UIStepper+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764DD19EDA41200A782A9 /* UIStepper+RACSignalSupport.m */; };
+		8993305D1BEBC60700E844E6 /* UISwitch+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764DF19EDA41200A782A9 /* UISwitch+RACSignalSupport.m */; };
+		8993305E1BEBC60700E844E6 /* UITableViewCell+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764E119EDA41200A782A9 /* UITableViewCell+RACSignalSupport.m */; };
+		8993305F1BEBC60700E844E6 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764E319EDA41200A782A9 /* UITableViewHeaderFooterView+RACSignalSupport.m */; };
+		899330601BEBC60700E844E6 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764E519EDA41200A782A9 /* UITextField+RACSignalSupport.m */; };
+		899330611BEBC60700E844E6 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D03764E719EDA41200A782A9 /* UITextView+RACSignalSupport.m */; };
 		D01B7B6219EDD8FE00D26E01 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D05E662419EDD82000904ACA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01B7B6319EDD8FE00D26E01 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D037672B19EDA75D00A782A9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01B7B6419EDD94B00D26E01 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D047260C19E49F82006002AA /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -2773,6 +2788,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				497FB76B1AB7637F00B7315F /* RACCompoundDisposableProvider.d in Sources */,
+				899330551BEBC60700E844E6 /* UIBarButtonItem+RACCommandSupport.m in Sources */,
 				497FB76C1AB7637F00B7315F /* RACSignalProvider.d in Sources */,
 				497FB70E1AB7637700B7315F /* NSArray+RACSequenceAdditions.m in Sources */,
 				497FB7111AB7637700B7315F /* NSData+RACSupport.m in Sources */,
@@ -2788,6 +2804,8 @@
 				497FB71D1AB7637700B7315F /* NSObject+RACPropertySubscribing.m in Sources */,
 				896376B11BE92448003045B9 /* UIControl+RACSignalSupportPrivate.m in Sources */,
 				497FB71E1AB7637700B7315F /* NSObject+RACSelectorSignal.m in Sources */,
+				899330561BEBC60700E844E6 /* UICollectionReusableView+RACSignalSupport.m in Sources */,
+				899330611BEBC60700E844E6 /* UITextView+RACSignalSupport.m in Sources */,
 				497FB71F1AB7637700B7315F /* NSOrderedSet+RACSequenceAdditions.m in Sources */,
 				497FB7201AB7637700B7315F /* NSSet+RACSequenceAdditions.m in Sources */,
 				497FB7211AB7637700B7315F /* NSString+RACKeyPathUtilities.m in Sources */,
@@ -2797,11 +2815,17 @@
 				497FB7271AB7637700B7315F /* RACArraySequence.m in Sources */,
 				497FB7291AB7637700B7315F /* RACBehaviorSubject.m in Sources */,
 				497FB72A1AB7637700B7315F /* RACBlockTrampoline.m in Sources */,
+				8993305F1BEBC60700E844E6 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
+				8993305B1BEBC60700E844E6 /* UISlider+RACSignalSupport.m in Sources */,
+				899330601BEBC60700E844E6 /* UITextField+RACSignalSupport.m in Sources */,
 				497FB72B1AB7637700B7315F /* RACChannel.m in Sources */,
 				497FB72C1AB7637700B7315F /* RACCommand.m in Sources */,
+				899330541BEBC60700E844E6 /* UIAlertView+RACSignalSupport.m in Sources */,
+				899330571BEBC60700E844E6 /* UIDatePicker+RACSignalSupport.m in Sources */,
 				896376AB1BE92448003045B9 /* UIButton+RACCommandSupport.m in Sources */,
 				497FB72D1AB7637700B7315F /* RACCompoundDisposable.m in Sources */,
 				497FB72E1AB7637700B7315F /* RACDelegateProxy.m in Sources */,
+				8993305C1BEBC60700E844E6 /* UIStepper+RACSignalSupport.m in Sources */,
 				497FB72F1AB7637700B7315F /* RACDisposable.m in Sources */,
 				497FB7301AB7637700B7315F /* RACDynamicSequence.m in Sources */,
 				497FB7311AB7637700B7315F /* RACDynamicSignal.m in Sources */,
@@ -2810,7 +2834,9 @@
 				497FB7331AB7637700B7315F /* RACEmptySequence.m in Sources */,
 				497FB7341AB7637700B7315F /* RACEmptySignal.m in Sources */,
 				497FB7351AB7637700B7315F /* RACErrorSignal.m in Sources */,
+				899330591BEBC60700E844E6 /* UIRefreshControl+RACCommandSupport.m in Sources */,
 				497FB7361AB7637700B7315F /* RACEvent.m in Sources */,
+				8993305E1BEBC60700E844E6 /* UITableViewCell+RACSignalSupport.m in Sources */,
 				497FB7371AB7637700B7315F /* RACGroupedSignal.m in Sources */,
 				497FB7381AB7637700B7315F /* RACImmediateScheduler.m in Sources */,
 				497FB7391AB7637700B7315F /* RACIndexSetSequence.m in Sources */,
@@ -2821,7 +2847,11 @@
 				497FB73E1AB7637700B7315F /* RACObjCRuntime.m in Sources */,
 				497FB73F1AB7637700B7315F /* RACPassthroughSubscriber.m in Sources */,
 				497FB7401AB7637700B7315F /* RACQueueScheduler.m in Sources */,
+				899330581BEBC60700E844E6 /* UIImagePickerController+RACSignalSupport.m in Sources */,
 				497FB7411AB7637700B7315F /* RACReplaySubject.m in Sources */,
+				8993305D1BEBC60700E844E6 /* UISwitch+RACSignalSupport.m in Sources */,
+				899330531BEBC60700E844E6 /* UIActionSheet+RACSignalSupport.m in Sources */,
+				8993305A1BEBC60700E844E6 /* UISegmentedControl+RACSignalSupport.m in Sources */,
 				497FB7421AB7637700B7315F /* RACReturnSignal.m in Sources */,
 				896376AF1BE92448003045B9 /* UIControl+RACSignalSupport.m in Sources */,
 				497FB7431AB7637700B7315F /* RACScheduler.m in Sources */,
